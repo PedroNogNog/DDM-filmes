@@ -7,7 +7,7 @@ export default function Banners() {
       <Text style={styles.textBanner}>Em cartaz</Text>
 
       <TouchableOpacity>
-        <Image style={styles.imgBanner} source={URL = "https://i.ytimg.com/vi/A-_RzwsMs4Q/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCmpc3ZToZvtjnOdCo-If3ZOcIU7Q"}/>
+        <Image style={styles.imgBanner} source={URL = "https://static.wikitide.net/avidwiki/thumb/7/7b/Cinemark_Theatres_%281999%29_%28Credit_-_FT_Depot%29.png/534px-Cinemark_Theatres_%281999%29_%28Credit_-_FT_Depot%29.png"}/>
       </TouchableOpacity>
     </View>
   );
