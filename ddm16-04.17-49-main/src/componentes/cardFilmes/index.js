@@ -7,7 +7,7 @@ export default function CardMovies({titulo,imagem,nota}){
     const navigation = useNavigation();
 return( 
 
-    <TouchableOpacity style={styles.containerJogos} onPress={()=> navigation.navigate('Detalhes',{titulo,nota})} > 
+    <TouchableOpacity style={styles.containerJogos} onPress={()=> navigation.navigate('Detalhes',{titulo,nota,imagem})} > 
     
 <Image style = {styles.images} source = {{uri:(imagem)}} /> 
 <Text style ={styles.titulo}>{titulo}</Text> 
