@@ -8,6 +8,10 @@ export default function Detalhes(){
         <View>
             <Text> {route.params.titulo}</Text>
             <Text> {route.params.nota}</Text>
+      <Image
+                source={{ uri: route.params.imagem }}
+                style={styles.image}
+            />
             <TouchableOpacity onPress={()=> navigation.goBack()}> Clique aqui para voltar </TouchableOpacity>
         </View>
     )
