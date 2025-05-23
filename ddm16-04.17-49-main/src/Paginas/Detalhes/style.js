@@ -32,6 +32,12 @@ const styles = StyleSheet.create({
         color: '#fff',
         fontSize: 16,
     },
+    sino: {
+        fontSize: 20,
+        fontWeight: 'bold',
+        marginBottom: 8,
+        color: '#fff'
+    }
 });
 
 export default styles
