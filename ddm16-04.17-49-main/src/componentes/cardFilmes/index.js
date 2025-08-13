@@ -9,7 +9,7 @@ return(
 
     <TouchableOpacity style={styles.containerJogos} onPress={()=> navigation.navigate('Detalhes',{titulo,nota,imagem,sinopse})} > 
     
-<Image style = {styles.images} source = {{uri:(imagem)}} /> 
+<Image style = {styles.images} source = {{uri:(`https://image.tmdb.org/t/p/original/$(imagem)`)}} /> 
 <Text style ={styles.titulo}>{titulo}</Text> 
 <Text style = {styles.textNota}>{nota}</Text> 
 </TouchableOpacity> 
