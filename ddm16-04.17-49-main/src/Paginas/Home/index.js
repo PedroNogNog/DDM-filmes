@@ -10,9 +10,35 @@ import Cabecalho from '../../componentes/cabecalho';
 import Pesquisa from '../../componentes/pesquisa/index.js';
 import Banners from '../../componentes/banner/index.js';
 import CardMovies from '../../componentes/cardFilmes/index.js';
+import { useState, useEffect } from 'react';
+
 
 export default function App() {
   const imagem = Math.floor(Math.random() * 4 + 1);
+
+const [movies, setMovies] = useState([]);
+
+useEffect(()=>{
+
+  async function buscarFilmes() {
+    
+    const url = 'https://api.themoviedb.org/3/movie/changes?page=1';
+const options = {
+  method: 'GET',
+  headers: {
+    accept: 'application/json',
+    Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI5MDE1YjczMTBjZmI3NTFmOTdhYWFjNjlmZDI2ZGFhNiIsIm5iZiI6MTc1NTAyMTU2Ny4xMjYwMDAyLCJzdWIiOiI2ODliODBmZmI0Njc5ZDQzOTMxYTMyOTYiLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.RW8QpCYzq7VeUfG6uoRI8IzufbY9VHRcipUd4oCoOvw'
+  
+  }
+  }
+
+  
+};
+})
+
+  
+
+
 
   return (
     <View style={styles.container}>
@@ -29,9 +55,9 @@ export default function App() {
           keyExtractor={(item) => item.id}
           renderItem={({ item }) => (
             <CardMovies
-              titulo={item.nome}
+              titulo={item.title}
               nota={item.nota}
-              imagem={item.imagem}
+              imagem={item.vote.path}
             />
           )}
         />
