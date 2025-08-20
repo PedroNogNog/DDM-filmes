@@ -86,8 +86,7 @@ export default function App() {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: '#141a29',
+    flex: 1, backgroundColor: '#A52A2A',
     alignItems: 'center',
   },
   listaContainer: {
